@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Box</title>
+</head>
+<body>
+
+    <h2>Search</h2>
+
+    <input type="text" id="searchBox" placeholder="Enter your search...">
+    <button onclick="getSearch()">Search</button>
+
+    <p id="result"></p>
+
+    <script>
+        function getSearch() {
+            let searchValue = document.getElementById("searchBox").value;
+
+            document.getElementById("result").innerText =
+                "You entered: " + searchValue;
+
+            console.log("User searched for:", searchValue);
+        }
+    </script>
+
+</body>
+</html>
